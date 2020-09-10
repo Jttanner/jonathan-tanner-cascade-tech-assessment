@@ -5,10 +5,8 @@ import App from './App.vue'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import TestData from './test-data/transaction-feed-example.json'
-
-
-console.log(JSON.stringify(TestData))
+//import test data file
+import TestData from './test-data/transaction-feed-example-data.json'
 
 Vue.config.productionTip = false
 
@@ -16,8 +14,7 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    count: 0,
-    transactionFeed : TestData
+    transactionFeed : TestData //for testing this application set the state of the store to our example data
   },
   mutations: {
     increment (state) {
@@ -29,4 +26,5 @@ const store = new Vuex.Store({
 new Vue({
   render: h => h(App),
   store: store,
+  
 }).$mount('#app')

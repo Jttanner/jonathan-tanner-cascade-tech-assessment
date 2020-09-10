@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TransactionFeedComponent title="Transactions"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TransactionFeedComponent from './components/TransactionFeedComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TransactionFeedComponent
   }
 }
 </script>
