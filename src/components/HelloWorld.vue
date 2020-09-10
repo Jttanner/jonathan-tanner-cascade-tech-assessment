@@ -8,7 +8,25 @@
     </p>
     
     <h3>Test Data</h3>
-    {{JSON.stringify(this.$store.state.transactionFeed)}}
+    <div>
+      {{JSON.stringify(this.$store.state.transactionFeed)}}
+    </div>
+    <h3>Bootstrap Test</h3>
+    <button class="btn btn-primary">This button has bootstrap styling</button>
+    <h3>Bootstrap columns</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <button class="btn btn-primary btn-block">primary</button>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-warning btn-block">warning</button>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-danger btn-block">danger</button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
