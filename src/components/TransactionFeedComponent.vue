@@ -224,10 +224,6 @@ export default {
         unsettledTransactionValueSum += currTransaction.Amount
       }
     })
-    // alert(earliestDate)
-    // alert(earliestAvailableBalance)
-    // alert(settledTransactionValueSum)
-    // alert(unsettledTransactionValueSum)
     //Update starting balance
     this.$store.commit('updateStartingStatementBalance', earliestAvailableBalance)
     //Update final balance 
