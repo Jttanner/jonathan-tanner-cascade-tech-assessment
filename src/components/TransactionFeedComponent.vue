@@ -55,8 +55,10 @@
       </tbody>
     </table>
 
+    
     <br />
-
+    <h3>Summary</h3>
+    <br />
     <table class="table table-striped">
       <thead>
         <th></th>
@@ -81,7 +83,6 @@
         </tr>
       </tbody>
     </table>
-
 
     <div class="modal fade" id="selectedTransactionModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
