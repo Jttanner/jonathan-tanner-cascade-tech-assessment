@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <br />
   
-    <table class="table table-bordered table-striped">
+    <table class="table table-striped">
       <thead>
         <th scope="col">
           Transaction Date
@@ -21,7 +21,7 @@
           Merchant Name
         </th>
         <th>
-          Billed
+          Transaction Settled
         </th>
         <th scope="col">
         </th>
@@ -44,11 +44,11 @@
               {{transaction.MerchantName}}
             </td>
             <td>
-              {{transaction.Billed ? "Yes" : "Not Settled"}}
+              {{transaction.Billed ? "Settled" : "Not Settled"}}
             </td>
             <td>
               <button v-on:click="updateModalWithSelectedTransactionData(transaction)" :class="transaction.Billed ? 'btn btn-info' : 'btn btn-warning'" data-toggle="modal" data-target="#selectedTransactionModal">
-                Show Details
+                Show More Details
               </button>
             </td>
           </tr>
@@ -57,7 +57,7 @@
 
     <br />
 
-    <table class="table table-bordered table-striped">
+    <table class="table table-striped">
       <thead>
         <th></th>
         <th>Ignoring Transactions Not Settled</th>
@@ -83,7 +83,7 @@
     </table>
 
 
-    <div class="modal" id="selectedTransactionModal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="selectedTransactionModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
